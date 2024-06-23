@@ -1,0 +1,32 @@
+.sliderContainer {
+  margin-top: 30px;
+}
+
+.sliderImage {
+  width: 100%;
+  object-fit: contain;
+  height: 720px;
+  filter: grayscale(1);
+
+  /* width: 1328px; */
+  /* object-fit: cover; */
+}
+
+.sliderContainer h1 {
+  color: #000;
+}
+
+.carouselCaption {
+  text-align: left;
+  bottom: 1.5rem;
+  left: 20%;
+  /* max-width: 555px; */
+  & span {
+    font-weight: 100;
+  }
+}
+
+.carouselCaption h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
