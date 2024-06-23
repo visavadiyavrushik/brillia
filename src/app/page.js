@@ -3,6 +3,7 @@ import HomeGallary from "@/sections/home/HomeGallery";
 import HomeReviews from "@/sections/home/HomeReviews";
 import HomeVideo from "@/sections/home/Homevideo";
 import OurValues from "@/sections/home/OurValues";
+import HomeMap from "@/sections/home/homeMap";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeGallary />
       <HomeVideo />
       <HomeReviews />
+      <HomeMap />
     </>
   );
 }
