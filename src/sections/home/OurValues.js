@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import styles from "../../styles/homeSlider.module.css";
 import Image from "next/image";
 
-export const OurValues = () => {
+const OurValues = () => {
   return (
     <>
       <Container>
@@ -29,3 +29,5 @@ export const OurValues = () => {
     </>
   );
 };
+
+export default OurValues;

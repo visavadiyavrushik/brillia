@@ -1,0 +1,40 @@
+.reviewsContainer {
+  padding: 70px 0;
+}
+
+.reviewsContent {
+  text-align: center;
+  & p {
+    font-size: 20px;
+    font-weight: 100;
+  }
+}
+
+.reviewsContentCol {
+  position: relative;
+}
+
+.quoteIcon::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/svg/quote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -29px;
+}
+
+.reviewsContentCol {
+  & .reviewerName {
+    & p {
+      margin: 0 0;
+      font-size: 20px;
+    }
+
+    & span {
+      font-size: 10px;
+    }
+  }
+}
