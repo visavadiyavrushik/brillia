@@ -30,3 +30,48 @@
   font-weight: 800;
   font-size: 60px;
 }
+
+.ourValues {
+  padding-top: 92px;
+  padding-bottom: 92px;
+  padding-left: 0;
+  padding-right: 0;
+
+  & h1 {
+    margin-top: 24px;
+    text-align: end;
+    font-weight: 100;
+    font-size: 50px;
+  }
+  & p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 100px;
+  }
+}
+
+.iconicApprochSection {
+  padding-top: 80px;
+}
+
+.iconicApproch {
+  margin-bottom: 92px;
+  /* height: 605px; */
+  width: 100%;
+  position: relative;
+  & img {
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  & h1 {
+    position: absolute;
+    bottom: 3%;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 800;
+    left: 5%;
+  }
+}

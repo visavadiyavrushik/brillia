@@ -88,6 +88,8 @@ body {
 }
 body {
   font-family: var(--font-Grotesk);
+  background: linear-gradient(90deg, #ffffff calc(100% - 1px), #d9d9d9 0);
+  background-size: calc((100% - 4 * 5px) / 6 + 5px) 100%;
 }
 
 a {
@@ -99,4 +101,18 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.carousel-indicators {
+  left: unset;
+  & button {
+    height: 4px !important;
+  }
+  & .active {
+    background-color: #000;
+  }
+}
+
+.container {
+  max-width: 1366px;
 }
