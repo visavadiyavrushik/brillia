@@ -1,11 +1,15 @@
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  fallback: ["Helvetica"],
+});
 
 export const metadata = {
   title: "Brillia",
@@ -21,7 +25,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className={inter.className}>
         <Header />
         {children}
         <Footer />

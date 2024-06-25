@@ -8,7 +8,7 @@ import styles from "../../styles/header.module.css";
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" className={styles?.navbar}>
+    <Navbar collapseOnSelect expand="xl" className={styles?.navbar}>
       <Container>
         <Nav.Link href="#home">
           <Image

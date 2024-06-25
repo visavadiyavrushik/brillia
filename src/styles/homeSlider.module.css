@@ -55,13 +55,15 @@
 }
 
 .iconicApproch {
-  margin-bottom: 92px;
+  margin-bottom: 65px;
   /* height: 605px; */
   width: 100%;
   position: relative;
   & img {
     filter: grayscale(1);
     transition: all 0.2s ease;
+    width: 100%;
+    object-fit: cover;
     &:hover {
       filter: grayscale(0);
     }

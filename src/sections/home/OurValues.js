@@ -18,7 +18,7 @@ const OurValues = () => {
             <Image
               src="/assets/images/iconic.jpg"
               alt="image"
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "cover" }}
               width={1300}
               height={658}
             />

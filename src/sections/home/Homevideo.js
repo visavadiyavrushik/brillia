@@ -11,6 +11,7 @@ const HomeVideo = () => {
           alt="video"
           width={1321}
           height={684}
+          style={{ width: "100%", objectFit: "cover" }}
         />
       </Container>
     </div>
