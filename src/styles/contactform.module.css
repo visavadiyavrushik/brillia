@@ -41,9 +41,14 @@
   }
 }
 
-/* .formImage {
-  border-bottom: 2px solid black;
-} */
+.formImage {
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
 
 .formCol label {
   display: block;
