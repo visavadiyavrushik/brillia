@@ -1,3 +1,4 @@
+import ContactForm from "@/components/Contactform/ContactForm";
 import HomeSlider from "@/components/HomeSlider/HomeSlider";
 import HomeGallary from "@/sections/home/HomeGallery";
 import HomeReviews from "@/sections/home/HomeReviews";
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeVideo />
       <HomeReviews />
       <HomeMap />
+      <ContactForm />
     </>
   );
 }

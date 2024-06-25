@@ -3,18 +3,34 @@ import Image from "next/image";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "../../styles/homeSlider.module.css";
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION,
+} from "@vanyapr/react-image-magnifiers";
 
 function HomeSlider() {
   return (
     <Container fluid className={styles.sliderContainer}>
       <Carousel fade>
         <Carousel.Item>
-          <Image
+          {/* <Image
             src="/assets/images/brelliaHome1.jpg"
             alt="logo"
             className={styles.sliderImage}
             width={1300}
             height={853}
+          /> */}
+
+          <GlassMagnifier
+            imageSrc="/assets/images/brelliaHome1.jpg"
+            imageAlt="Example"
+            largeImageSrc="/assets/images/brelliaHome1.jpg" // Optional
+            magnifierSize={250}
+            styles={{ zIndex: 1 }}
           />
 
           <Carousel.Caption className={styles.carouselCaption}>

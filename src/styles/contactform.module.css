@@ -1,0 +1,88 @@
+/* .formContainer {
+  margin-top: 70px;
+  & img {
+    width: 100%;
+  }
+}
+
+.formCol {
+  & h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 38px;
+  }
+  & span {
+    font-weight: 100;
+  }
+} */
+
+.formContainer {
+  margin-top: 70px;
+  & img {
+    width: 100%;
+  }
+}
+
+.formCol {
+  padding: 20px;
+}
+
+/* .formCol h1 span {
+  display: block;
+} */
+.formCol {
+  & h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 38px;
+  }
+  & span {
+    font-weight: 100;
+  }
+}
+
+/* .formImage {
+  border-bottom: 2px solid black;
+} */
+
+.formCol label {
+  display: block;
+  /* margin-bottom: 5px; */
+  font-weight: bold;
+}
+
+.formCol input[type="text"],
+.formCol input[type="email"] {
+  width: 100%;
+  /* padding: 10px; */
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    /* border: 0; */
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+  }
+}
+
+.formCol button[type="submit"] {
+  display: block;
+  max-width: 267px;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formCol button[type="submit"]:hover {
+  background-color: #333;
+}
