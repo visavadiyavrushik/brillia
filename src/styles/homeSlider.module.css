@@ -7,7 +7,10 @@
   object-fit: contain;
   height: 720px;
   filter: grayscale(1);
-
+  &:hover {
+    filter: grayscale(0);
+  }
+  /* max-width: 1310px; */
   /* width: 1328px; */
   /* object-fit: cover; */
 }

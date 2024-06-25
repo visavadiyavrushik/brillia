@@ -30,7 +30,9 @@ function HomeSlider() {
             imageAlt="Example"
             largeImageSrc="/assets/images/brelliaHome1.jpg" // Optional
             magnifierSize={250}
-            styles={{ zIndex: 1 }}
+            // styles={{ zIndex: 1 }}
+            className={styles.sliderImage}
+            m
           />
 
           <Carousel.Caption className={styles.carouselCaption}>
