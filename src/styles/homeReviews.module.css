@@ -4,10 +4,11 @@
 
 .reviewsContent {
   text-align: center;
-  & p {
-    font-size: 20px;
-    font-weight: 100;
-  }
+}
+
+.reviewsContent p {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .reviewsContentCol {
@@ -26,15 +27,92 @@
   left: -29px;
 }
 
-.reviewsContentCol {
-  & .reviewerName {
-    & p {
-      margin: 0 0;
-      font-size: 20px;
-    }
+.reviewsContentCol .reviewerName p {
+  margin: 0;
+  font-size: 20px;
+}
 
-    & span {
-      font-size: 10px;
-    }
+.reviewsContentCol .reviewerName span {
+  font-size: 10px;
+}
+
+/* Home Rev */
+
+.iframeVideo {
+  width: 100%;
+  height: 684px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .iframeVideo {
+    height: 500px;
+  }
+
+  .reviewsContent p {
+    font-size: 18px;
+  }
+
+  .reviewsContentCol .reviewerName p {
+    font-size: 18px;
+  }
+
+  .reviewsContentCol .reviewerName span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  .iframeVideo {
+    height: 400px;
+  }
+
+  .reviewsContent p {
+    font-size: 16px;
+  }
+
+  .reviewsContentCol .reviewerName p {
+    font-size: 16px;
+  }
+
+  .reviewsContentCol .reviewerName span {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iframeVideo {
+    height: 300px;
+  }
+
+  .reviewsContent p {
+    font-size: 14px;
+  }
+
+  .reviewsContentCol .reviewerName p {
+    font-size: 14px;
+  }
+
+  .reviewsContentCol .reviewerName span {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  .iframeVideo {
+    height: 200px;
+  }
+
+  .reviewsContent p {
+    font-size: 12px;
+  }
+
+  .reviewsContentCol .reviewerName p {
+    font-size: 12px;
+  }
+
+  .reviewsContentCol .reviewerName span {
+    font-size: 6px;
   }
 }

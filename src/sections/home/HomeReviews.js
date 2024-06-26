@@ -7,7 +7,7 @@ const HomeReviews = () => {
     <Container className={styles.reviewsContainer}>
       <Row className={styles.reviewsContent}>
         <Col
-          xs={12}
+          xs={11}
           md={{ span: 8, offset: 2 }}
           className={styles.reviewsContentCol}
         >
