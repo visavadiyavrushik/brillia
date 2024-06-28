@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import styles from "../../styles/header.module.css";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -44,7 +45,9 @@ function Header() {
               IGNITE
             </Nav.Link>
           </Nav>
-          <Button className={styles.contactusBtn}>Contact us</Button>
+          <Link href="/contact-us" passHref>
+            <Button className={styles.contactusBtn}>Contact us</Button>
+          </Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
