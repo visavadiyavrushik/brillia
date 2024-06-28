@@ -1,0 +1,215 @@
+.ContactImageContainer {
+  padding: 50px 0;
+}
+
+.ContactImageDiv {
+  position: relative;
+
+  & h1 {
+    position: absolute;
+    bottom: 3%;
+    color: #000;
+    font-size: 72px;
+    font-weight: 800;
+    left: 5%;
+  }
+  & span {
+    font-weight: 300;
+  }
+}
+
+.ContactImage {
+  width: 100%;
+  height: 630px;
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.getIntouchContainer {
+  padding: 50px 10px;
+}
+
+.slasTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.formCol {
+  padding: 20px;
+
+  & h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 38px;
+  }
+  & span {
+    font-weight: 100;
+  }
+}
+
+.formCol label {
+  display: block;
+  font-weight: bold;
+}
+
+.formCol input[type="text"],
+.formCol input[type="email"] {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+  }
+}
+
+.formCol button[type="submit"] {
+  display: block;
+  max-width: 267px;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formCol button[type="submit"]:hover {
+  background-color: #333;
+}
+
+.mediaInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  & img {
+    margin-right: 20px;
+    margin-top: 4px;
+    filter: invert(1);
+  }
+
+  & p {
+    margin: 0 0;
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+.addressBox {
+  max-width: 429px;
+  margin: 0 auto;
+
+  & .title {
+    margin-top: 60px;
+  }
+
+  & .addressImage {
+    margin-top: 60px;
+    height: 267px;
+    max-width: 467px;
+    width: 100%;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .ContactImageDiv h1 {
+    font-size: 56px;
+  }
+
+  .formCol h1 {
+    font-size: 36px;
+  }
+
+  .mediaInfo p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ContactImage {
+    height: 500px;
+  }
+
+  .ContactImageDiv h1 {
+    font-size: 48px;
+  }
+
+  .formCol h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactImage {
+    height: 400px;
+  }
+
+  .ContactImageDiv h1 {
+    font-size: 40px;
+  }
+
+  .formCol h1 {
+    font-size: 28px;
+  }
+
+  .mediaInfo p {
+    font-size: 16px;
+  }
+
+  .formCol {
+    padding: 15px;
+  }
+
+  .formCol button[type="submit"] {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ContactImage {
+    height: 300px;
+  }
+
+  .ContactImageDiv h1 {
+    font-size: 32px;
+  }
+
+  .formCol h1 {
+    font-size: 24px;
+  }
+
+  .mediaInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mediaInfo img {
+    margin: 0 0 10px 0;
+  }
+
+  .mediaInfo p {
+    font-size: 14px;
+  }
+
+  /* .getIntouchContainer,
+  .ContactImageContainer {
+    padding: 30px 0;
+  } */
+
+  .formCol {
+    padding: 10px;
+  }
+}

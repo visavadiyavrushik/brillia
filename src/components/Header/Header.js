@@ -10,7 +10,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="xl" className={styles?.navbar}>
       <Container>
-        <Nav.Link href="#home">
+        <Nav.Link href="/">
           <Image
             src="/assets/logo/logo.png"
             alt="Logo"
@@ -24,7 +24,7 @@ function Header() {
           className="justify-content-end"
         >
           <Nav className={styles.navItems}>
-            <Nav.Link href="#deets">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               Legacy of Pravish
             </Nav.Link>
