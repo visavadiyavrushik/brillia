@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Col, Container, Row, Form, Button } from "react-bootstrap";
+import { Col, Container, Row, Form, Button, Carousel } from "react-bootstrap";
 import styles from "../../styles/contactform.module.css";
 
 const ContactForm = () => {
@@ -9,13 +9,26 @@ const ContactForm = () => {
     <Container className={styles.formContainer}>
       <Row>
         <Col xs={12} md={6}>
-          <Image
-            src="/assets/images/contactForm.png"
-            alt="image"
-            width={558}
-            height={752}
-            className={styles.formImage}
-          />
+          <Carousel controls>
+            <Carousel.Item>
+              <Image
+                src="/assets/images/contactForm.png"
+                alt="image"
+                width={558}
+                height={752}
+                className={styles.formImage}
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <Image
+                src="/assets/images/contactForm.png"
+                alt="image"
+                width={258}
+                height={752}
+                className={styles.formImage}
+              />
+            </Carousel.Item>
+          </Carousel>
         </Col>
         <Col xs={12} md={6} className={styles.formCol}>
           <h1>

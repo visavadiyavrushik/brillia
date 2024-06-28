@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
+import AnimatedCursor from "../components/cursor/AnimatedCursor";
 // import CustomCursor from "@/components/customCursor/CustomCursor";
 
 const inter = Poppins({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AnimatedCursor />
         <Header />
         {/* <CustomCursor /> */}
         {children}

@@ -9,9 +9,9 @@ const HomeMap = () => {
         width="100%"
         height="450"
         className="mapIframe"
-        allowFullScreen=""
+        allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </Container>
   );

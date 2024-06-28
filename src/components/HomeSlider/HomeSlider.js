@@ -3,14 +3,14 @@ import Image from "next/image";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "../../styles/homeSlider.module.css";
-import {
-  Magnifier,
-  GlassMagnifier,
-  SideBySideMagnifier,
-  PictureInPictureMagnifier,
-  MOUSE_ACTIVATION,
-  TOUCH_ACTIVATION,
-} from "@vanyapr/react-image-magnifiers";
+// import {
+//   Magnifier,
+//   GlassMagnifier,
+//   SideBySideMagnifier,
+//   PictureInPictureMagnifier,
+//   MOUSE_ACTIVATION,
+//   TOUCH_ACTIVATION,
+// } from "@vanyapr/react-image-magnifiers";
 
 function HomeSlider() {
   return (

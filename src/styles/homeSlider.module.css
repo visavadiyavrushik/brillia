@@ -26,12 +26,12 @@
   left: 20%;
   /* max-width: 555px; */
   & span {
-    /* font-weight: 100; */
+    font-weight: 300;
   }
 }
 
 .carouselCaption h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 60px;
 }
 
@@ -149,7 +149,7 @@
   .ourValues p {
     font-size: 14px;
     padding-left: 40px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .iconicApproch h1 {
