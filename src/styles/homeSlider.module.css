@@ -62,14 +62,26 @@
 
 .iconicApproch {
   margin-bottom: 65px;
-  /* height: 605px; */
+  height: 605px;
   width: 100%;
   position: relative;
+  /* 
+  background-image: url("/assets/images/iconic.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease;
+  filter: grayscale(1); */
+  &:hover {
+    filter: grayscale(0);
+  }
   & img {
-    filter: grayscale(1);
-    transition: all 0.2s ease;
+    /* display: none; */
     width: 100%;
     object-fit: cover;
+    transition: all 0.2s ease;
+    filter: grayscale(1);
     &:hover {
       filter: grayscale(0);
     }

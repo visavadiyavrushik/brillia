@@ -32,10 +32,17 @@ function Header() {
             <Nav.Link eventKey={2} href="#memes">
               Why BRILLIA ?
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            {/* <Nav.Link eventKey={2} href="#memes">
+              Brochure
+            </Nav.Link> */}
+            <Nav.Link
+              href="/assets/BrilliaBrochure.pdf"
+              target="_blank"
+              legacyBehavior
+            >
               Brochure
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            {/* <Nav.Link eventKey={2} href="#memes">
               Investor
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
@@ -43,7 +50,7 @@ function Header() {
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               IGNITE
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Link href="/contact-us" passHref>
             <Button className={styles.contactusBtn}>Contact us</Button>
