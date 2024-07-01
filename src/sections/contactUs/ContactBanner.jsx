@@ -5,7 +5,7 @@ import styles from "../../styles/contact-us/contactus.module.css";
 
 const ContactBanner = () => {
   return (
-    <Container className={styles.ContactImageContainer}>
+    <Container fluid className={styles.ContactImageContainer}>
       <div className={styles.ContactImageDiv}>
         <Image
           className={styles.ContactImage}

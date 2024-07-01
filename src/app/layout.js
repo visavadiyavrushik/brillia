@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <AnimatedCursor
           innerSize={10}
-          outerSize={30}
+          outerSize={50}
           color="0, 0, 0"
-          outerAlpha={0.2}
+          outerAlpha={0}
           innerScale={1}
           outerScale={2}
           outerStyle={{

@@ -182,3 +182,10 @@ a {
     background-color: #000;
   }
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+  height: 50px;
+  top: 50%;
+  bottom: 50%;
+}
