@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import AnimatedCursor from "react-animated-cursor";
+import CookiesBanner from "@/components/CookiesBanner/CookiesBanner";
 // import AnimatedCursor from "../components/cursor/AnimatedCursor";
 // import CustomCursor from "@/components/customCursor/CustomCursor";
 
@@ -26,14 +27,11 @@ export default function RootLayout({ children }) {
           innerSize={10}
           outerSize={50}
           color="0, 0, 0"
-          // color="188,188,188"
           outerAlpha={0}
           innerScale={1}
           outerScale={2}
           outerStyle={{
             border: "2px solid #000",
-            // border: "2px solid #bcbcbc",
-
             mixBlendMode: "revert",
           }}
           clickables={[
@@ -54,6 +52,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <CustomCursor /> */}
         {children}
+        <CookiesBanner />
         <Footer />
       </body>
     </html>

@@ -3,6 +3,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/footer.module.css";
 import Link from "next/link";
+import AnimatedCursor from "react-animated-cursor";
 
 const Footer = () => {
   return (

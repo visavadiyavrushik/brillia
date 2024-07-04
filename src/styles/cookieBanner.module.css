@@ -1,0 +1,55 @@
+/* styles/cookieBanner.module.css */
+.bannerStyle {
+  position: fixed;
+  bottom: 28px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  z-index: 1000;
+  margin: 0 auto;
+  max-width: 1336px;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+}
+.bannerStyle .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bannerStyle button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+}
+
+.bannerStyle button:hover {
+  background-color: #fff;
+}
+
+.bannerStyle p {
+  margin: 0 0;
+}
+
+@media (max-width: 992px) {
+  .bannerStyle {
+    bottom: 0;
+  }
+  .bannerStyle .container {
+    flex-direction: column;
+  }
+  .bannerStyle p {
+    font-size: 12px;
+  }
+  .bannerStyle button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}

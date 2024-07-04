@@ -72,7 +72,7 @@
 
 .formCol label {
   display: block;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .formCol input[type="text"],

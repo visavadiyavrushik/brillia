@@ -189,3 +189,19 @@ a {
   top: 50%;
   bottom: 50%;
 }
+
+body footer {
+  cursor: auto !important;
+
+  & a {
+    cursor: pointer !important;
+  }
+}
+
+.homeReviews_iFrameModal__fWjTJ .modal-content {
+  background-color: transparent;
+}
+
+.modal-header {
+  border: 0;
+}
