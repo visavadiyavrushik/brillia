@@ -13,21 +13,6 @@
   padding-bottom: 20px;
 }
 
-.mediaInfo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 24px;
-  & img {
-    margin-right: 20px;
-    margin-top: 4px;
-  }
-
-  & p {
-    margin: 0 0;
-  }
-}
-
 .socialIcons {
   text-align: center;
   margin-top: 10px;

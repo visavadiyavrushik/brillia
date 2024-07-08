@@ -1,6 +1,16 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
 import styles from "../../styles/homegallery.module.css";
 
 const HomeGallery = () => {
@@ -17,25 +27,42 @@ const HomeGallery = () => {
     { src: "/assets/images/gallery8.png", alt: "Gallery Image 5" },
     { src: "/assets/images/gallery9.png", alt: "Gallery Image 6" },
   ];
+
+  const onInit = () => {
+    console.log("lightGallery has been initialized");
+  };
   return (
     <Container className={styles.homeGalleryContainer}>
-      <p>We Believe, ICONICs are RARE & crafted BRILLIANTLY</p>
+      <motion.div
+        initial={{ opacity: 0, x: 150 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+      >
+        {" "}
+        <p>We Believe, ICONICs are RARE & crafted BRILLIANTLY</p>
+      </motion.div>
+
       <Row className={styles?.homegallary}>
         {images?.map((image, index) => (
           <Col key={index} xs={12} md={6} lg={4}>
-            <Image src={image.src} alt={image.alt} height={327} width={430} />
+            <LightGallery
+              onInit={onInit}
+              speed={500}
+              plugins={[lgThumbnail, lgZoom]}
+              thumbnail
+            >
+              <a href={image.src}>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  height={327}
+                  width={430}
+                />
+              </a>
+            </LightGallery>
           </Col>
         ))}
       </Row>
-      {/* <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.29918162923!2d72.4149336068423!3d23.02015808814217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1719141436374!5m2!1sen!2sin"
-        width="100%"
-        height="450"
-        style={{ border: 0, filter: "grayscale(1)" }}
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe> */}
     </Container>
   );
 };

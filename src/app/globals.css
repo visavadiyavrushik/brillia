@@ -205,3 +205,10 @@ body footer {
 .modal-header {
   border: 0;
 }
+
+@media (max-width: 778px) {
+  body {
+    background: linear-gradient(90deg, #ffffff calc(100% - 1px), #d9d9d9 0);
+    background-size: calc((100% - 3 * 5px) / 3 + 5px) 100%;
+  }
+}

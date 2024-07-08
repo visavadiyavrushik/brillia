@@ -140,6 +140,7 @@
 @media (max-width: 768px) {
   .sliderImage {
     max-height: 500px;
+    padding: 0 0;
   }
 
   .carouselCaption {

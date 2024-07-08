@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AnimatedCursor
+        {/* <AnimatedCursor
           innerSize={10}
           outerSize={50}
           color="0, 0, 0"
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
             ".link",
             "iframe",
           ]}
-        />
+        /> */}
         <Header />
         {/* <CustomCursor /> */}
         {children}

@@ -11,9 +11,9 @@ const OurValues = () => {
       <Container>
         <div className={styles.ourValues}>
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            initial={{ opacity: 0, x: 150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
           >
             <p>/ OUR VALUES</p>
             <h1>OPENNESS ✦ INTEGRITY ✦ TRANSPARENCY</h1>
@@ -24,8 +24,8 @@ const OurValues = () => {
         <section className={styles.iconicApprochSection}>
           <div className={styles.iconicApproch}>
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -150 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5 }}
             >
               <Image

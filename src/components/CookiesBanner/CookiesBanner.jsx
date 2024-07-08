@@ -26,10 +26,10 @@ const CookiesBanner = () => {
     <div className={styles.bannerStyle}>
       <Container className={styles.container}>
         <p>
-          We use cookies to improve your experience on our site. By using our
-          site, you consent to cookies.
+          We use cookies to provide you the best experience on our website. By
+          continuing to use our site, we will assume you are happy with it.
         </p>
-        <button onClick={acceptCookies}>Accept</button>
+        <button onClick={acceptCookies}>Got it</button>
       </Container>
     </div>
   );
