@@ -49,7 +49,6 @@ const HomeGallery = () => {
               onInit={onInit}
               speed={500}
               plugins={[lgThumbnail, lgZoom]}
-              thumbnail
             >
               <a href={image.src}>
                 <Image
