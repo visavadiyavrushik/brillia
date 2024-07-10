@@ -21,6 +21,7 @@
 } */
 
 .homeGalleryContainer {
+  /* text-align: center; */
   & p {
     text-align: center;
     padding: 60px 0 77px 0;
@@ -30,6 +31,9 @@
 }
 
 .homegallary {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
   & img {
     width: 100%;
     margin-bottom: 30px;
@@ -41,6 +45,11 @@
     }
   }
 }
+
+/* .galleryItem {
+  flex: 1 1 30%;
+  margin: 10px;
+} */
 
 /* Responsive Styles */
 

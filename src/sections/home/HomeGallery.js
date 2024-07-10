@@ -47,6 +47,7 @@ const HomeGallery = () => {
           <Col key={index} xs={12} md={6} lg={4}>
             <LightGallery
               onInit={onInit}
+              th
               speed={500}
               plugins={[lgThumbnail, lgZoom]}
             >
