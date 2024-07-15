@@ -2,6 +2,12 @@
   /* margin-top: 30px; */
 }
 
+.word {
+  display: inline-block;
+  margin: 0 5px;
+  /* font-weight: bold;  */
+}
+
 .sliderImage {
   width: 100%;
   object-fit: cover;

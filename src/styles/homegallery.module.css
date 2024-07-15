@@ -46,10 +46,10 @@
   }
 }
 
-/* .galleryItem {
-  flex: 1 1 30%;
-  margin: 10px;
-} */
+.galleryImage {
+  margin: 0 24px 24px 0;
+  width: 100%;
+}
 
 /* Responsive Styles */
 
