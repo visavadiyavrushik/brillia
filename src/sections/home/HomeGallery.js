@@ -69,7 +69,7 @@ const HomeGallery = () => {
         <p>We Believe, ICONICs are RARE & crafted BRILLIANTLY</p>
       </motion.div>
 
-      <Row className={styles.homeGallery}>
+      <Row className={styles.homegallary}>
         {batches.map((batch, batchIndex) => (
           <React.Fragment key={batchIndex}>
             {batch.map((image, imageIndex) => (
