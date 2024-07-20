@@ -18,8 +18,8 @@ const OurValues = () => {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, x: -150 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 1.5 } },
   };
 
   const wordVariants = {
@@ -27,21 +27,33 @@ const OurValues = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
   };
 
+  const rotationVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5 },
+    },
+    rotate: {
+      rotate: 360,
+      transition: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 10,
+        ease: "linear",
+      },
+    },
+  };
+
   return (
     <>
       <Container>
         <div className={styles.ourValues} ref={ref1}>
-          {/* <motion.div
-            variants={textVariants}
-            initial="hidden"
-            animate={isInView1 ? "visible" : "hidden"}
-          > */}
           <p>
             <Typewriter
               words={["/ OUR VALUES"]}
               loop={1}
               cursor={false}
-              // cursorStyle="_"
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
@@ -54,16 +66,32 @@ const OurValues = () => {
               animate={isInView1 ? "visible" : "hidden"}
               className={styles.word}
             >
-              OPENNESS ✦{" "}
-            </motion.span>{" "}
+              OPENNESS{" "}
+              <motion.span
+                variants={rotationVariants}
+                initial="hidden"
+                animate={isInView1 ? ["visible", "rotate"] : "hidden"}
+                className={styles.word}
+              >
+                ✦
+              </motion.span>{" "}
+            </motion.span>
             <motion.span
               variants={wordVariants}
               initial="hidden"
               animate={isInView1 ? "visible" : "hidden"}
               className={styles.word}
             >
-              INTEGRITY ✦{" "}
-            </motion.span>{" "}
+              INTEGRITY{" "}
+              <motion.span
+                variants={rotationVariants}
+                initial="hidden"
+                animate={isInView1 ? ["visible", "rotate"] : "hidden"}
+                className={styles.word}
+              >
+                ✦
+              </motion.span>
+            </motion.span>
             <motion.span
               variants={wordVariants}
               initial="hidden"
@@ -73,7 +101,6 @@ const OurValues = () => {
               TRANSPARENCY
             </motion.span>
           </h1>
-          {/* </motion.div> */}
         </div>
       </Container>
       <Container>

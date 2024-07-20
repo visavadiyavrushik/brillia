@@ -13,12 +13,50 @@ function HomeSlider() {
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
 
-  const textVariants1 = {
-    hidden: { opacity: 0, x: 120 },
-    visible: {
+  // const textVariants1 = {
+  //   hidden: { opacity: 0, x: 120 },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: { duration: 0.64, ease: [0.43, 0.13, 0.23, 0.96] },
+  //   },
+  // };
+
+  const imgvarient = {
+    initial: {
+      scale: 0.8,
+      opacity: 0,
+    },
+    animate: {
+      scale: 1,
       opacity: 1,
+      transition: {
+        duration: 1,
+        // staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const textVariants1 = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
       x: 0,
-      transition: { duration: 0.64, ease: [0.43, 0.13, 0.23, 0.96] },
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+    scrollButton: {
+      opacity: 0,
+      y: 10,
+      transition: {
+        duration: 2,
+        repeat: Infinity,
+      },
     },
   };
 
@@ -31,20 +69,21 @@ function HomeSlider() {
     <Container fluid className={styles.sliderContainer}>
       <Carousel fade controls>
         <Carousel.Item>
-          <GlassMagnifier
-            imageSrc="/assets/images/brilliaHome1Gray.jpg"
-            imageAlt="Example"
-            largeImageSrc="/assets/images/brelliaHome1.jpg" // Optional
-            magnifierSize={250}
-            className={styles.sliderImage}
-          />
+          <motion.div initial="initial" animate="animate" variants={imgvarient}>
+            <GlassMagnifier
+              imageSrc="/assets/images/brilliaHome1Gray.jpg"
+              imageAlt="Example"
+              largeImageSrc="/assets/images/brelliaHome1.jpg" // Optional
+              magnifierSize={250}
+              className={styles.sliderImage}
+            />
+          </motion.div>
 
           <Carousel.Caption className={styles.carouselCaption}>
             <motion.h1
-              ref={ref1}
+              initial="initial"
+              animate="animate"
               variants={textVariants1}
-              initial="hidden"
-              animate={isInView1 ? "visible" : "hidden"}
             >
               <span>BUILDING </span> THE FUTURE <br />
               WITH BRILLIA-nt IDEAS
@@ -62,10 +101,9 @@ function HomeSlider() {
 
           <Carousel.Caption className={styles.carouselCaption}>
             <motion.h1
-              ref={ref2}
-              variants={textVariants2}
-              initial="hidden"
-              animate={isInView2 ? "visible" : "hidden"}
+              initial="initial"
+              animate="animate"
+              variants={textVariants1}
             >
               <span>BUILDING </span> THE FUTURE <br />
               WITH BRILLIA-nt IDEAS
